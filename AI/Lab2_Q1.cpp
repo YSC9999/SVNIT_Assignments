@@ -1,38 +1,5 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <map>
-
+#include <bits/stdc++.h>
 using namespace std;
-
-/**
- * Problem 1: Simple Reflex Agent for Vacuum Cleaner
- * 
- * Rationality: 
- * A rational agent is one that does the right thing, conceptually, every entry in the table
- * for the agent function is filled out correctly. For a vacuum cleaner, rationality means
- * maximizing the cleanliness of the rooms while minimizing unnecessary movement. 
- * An agent is rational if, given its percept history and internal knowledge, it chooses 
- * an action that is expected to maximize its performance measure.
- * 
- * Performance Cost:
- * 1. +10 points for each room cleaned (Suck action on Dirty room).
- * 2. -1 point for each movement (Move Left/Right/Stay).
- * 3. -5 points if a room remains Dirty in a time step.
- * 
- * Rule Table:
- * Percept (Location, Status) -> Action
- * (A, Dirty) -> Suck
- * (A, Clean) -> Move Right
- * (B, Dirty) -> Suck
- * (B, Clean) -> Move Right (or Left, strategy dependent)
- * (C, Dirty) -> Suck
- * (C, Clean) -> Move Left
- * 
- * Priority: 
- * In a simple reflex agent, rules are usually checked in order. "Suck" generally has 
- * higher priority than "Move" if the current location is dirty.
- */
 
 enum Status { CLEAN, DIRTY };
 enum Action { SUCK, MOVE_LEFT, MOVE_RIGHT, NO_OP };
