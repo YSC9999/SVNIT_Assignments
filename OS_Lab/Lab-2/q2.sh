@@ -1,7 +1,3 @@
-#!/bin/bash
-
-# 2. Display the content of notes.txt on the terminal. 
-# Count the number of lines, words, and characters in notes.txt.
 
 FILE="Assignment1/notes.txt"
 
