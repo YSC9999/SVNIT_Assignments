@@ -1,11 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <map>
-#include <queue>
-#include <set>
-#include <algorithm>
-
+#include <bits/stdc++.h>
 using namespace std;
 
 map<string, vector<string>> network = {

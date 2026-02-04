@@ -1,13 +1,6 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <map>
-#include <queue>
-#include <algorithm>
-
+#include <bits/stdc++.h>
 using namespace std;
 
-// Structure to represent an edge
 struct Edge
 {
     string to;
